@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { logo, menu, close } from "../assets";
+import {  menu, close } from "../assets";
 import { navLinks } from "../constants";
 
 const Navbar = () => {
@@ -28,7 +28,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img loading="lazy" src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          {/* <img loading="lazy" src={logo} alt="logo" className="w-9 h-9 object-contain" /> */}
           <p className="text-white text-lg font-bold cursor-pointer">
             Ritvik Tak <span className="hidden sm:inline">| Web Developer</span>
           </p>

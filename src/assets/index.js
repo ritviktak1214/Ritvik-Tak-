@@ -1,4 +1,4 @@
-import logo from "./Rt.svg";
+// import logo from "./Rt.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -46,7 +46,7 @@ import TicToe from "./TicToe.png";
 import clone from "./AmazonClone.png";
 import WhatsappForm from "./WhatsAppForm.png";
 export {
-  logo,
+  // logo,
   backend,
   creator,
   mobile,
