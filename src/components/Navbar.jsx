@@ -28,7 +28,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img loading="lazy" src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-lg font-bold cursor-pointer">
             Ritvik Tak <span className="hidden sm:inline">| Web Developer</span>
           </p>
@@ -51,7 +51,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <div className="sm:hidden flex items-center">
-          <img
+          <img loading="lazy"
             src={toggle ? close : menu}
             alt="menu"
             className="w-7 h-7 object-contain cursor-pointer"
