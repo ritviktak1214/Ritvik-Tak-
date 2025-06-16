@@ -1,4 +1,5 @@
 // import logo from "./Rt.svg";
+
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -37,14 +38,16 @@ import rajveer from "./company/review2.jpg";
 import Shubham from "./company/review4.jpg";
 
 import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+
+
 import RockPaper from "./RockPaper.png";
 import Vlight from "./V-lightHouse.png";
 import AppScript from "./AppScript.png";
 import TicToe from "./TicToe.png";
 import clone from "./AmazonClone.png";
 import WhatsappForm from "./WhatsAppForm.png";
+
+
 export {
   // logo,
   backend,
@@ -79,14 +82,12 @@ export {
   whatsapp,
   xo,
   carrent,
-  jobit,
   RockPaper,
   Vlight,
   AppScript,
   TicToe,
   clone,
   WhatsappForm,
-  tripguide,
   kunal,
   rajveer,
   Shubham,
