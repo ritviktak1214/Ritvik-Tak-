@@ -5,6 +5,7 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Stars
 import heroBg from "./assets/herobg.png";
 
 const App = () => {
+  console.log('app');
   return (
     <BrowserRouter>
       <div style={{ backgroundImage: `url(${heroBg})` }} className="bg-cover bg-center h-full w-full">
