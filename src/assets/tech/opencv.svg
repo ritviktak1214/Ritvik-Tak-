@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <g transform="translate(64,64)">
+    <!-- Red circle top -->
+    <circle cx="0" cy="-36" r="24" fill="none" stroke="#ED1C24" stroke-width="12"/>
+    <!-- Green circle bottom right -->
+    <circle cx="31.2" cy="18" r="24" fill="none" stroke="#00A651" stroke-width="12"/>
+    <!-- Blue circle bottom left -->
+    <circle cx="-31.2" cy="18" r="24" fill="none" stroke="#2E3192" stroke-width="12"/>
+    <circle cx="0" cy="-36" r="4" fill="#ED1C24"/>
+    <circle cx="31.2" cy="18" r="4" fill="#00A651"/>
+    <circle cx="-31.2" cy="18" r="4" fill="#2E3192"/>
+  </g>
+</svg>
+

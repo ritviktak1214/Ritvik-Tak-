@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="24" fill="#0f172a"/>
+  <!-- Scaler red diamond staircase -->
+  <path d="M34 84l20-20 20 20 20-20" fill="none" stroke="#EF4444" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="34" cy="84" r="5" fill="#EF4444"/>
+  <circle cx="54" cy="64" r="5" fill="#EF4444"/>
+  <circle cx="74" cy="84" r="5" fill="#EF4444"/>
+  <circle cx="94" cy="64" r="5" fill="#EF4444"/>
+  <path d="M94 44v20" stroke="#EF4444" stroke-width="8" stroke-linecap="round"/>
+</svg>
+

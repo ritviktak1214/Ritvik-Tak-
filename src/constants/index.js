@@ -1,37 +1,46 @@
-import { Clone } from "@react-three/drei";
 import {
   mobile,
   backend,
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   Java,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  Springboot,
+  docker,
   git,
-  figma,
   MySQL,
+  Springboot,
+  python,
+  opencv,
+  pytorch,
+  nvidia,
+  yolo,
+  tensorrt,
+  linux,
+  mialo,
+  scaler,
   kunal,
   rajveer,
   Shubham,
-  RockPaper,
-  Vlight,
-  AppScript,
-  TicToe,
-  clone,
-  WhatsappForm,
-  bulb,
-  shopping,
-  whatsapp,
-  xo,
-  
+  footfall,
+  edge_analytics,
+  rest_api,
 } from "../assets";
+
+export const personalInfo = {
+  name: "Ritvik Tak",
+  title: "AI Engineer | Computer Vision & Edge AI",
+  email: "thakur.ritvik9440@gmail.com",
+  phone: "+91 80001 83583",
+  location: "Bangalore, India",
+  linkedin: "https://linkedin.com/in/ritvik-tak-14bb84251",
+  github: "https://github.com/thakur-ritvik",
+  summary:
+    "AI Engineer building real-time computer vision systems for retail analytics, from object detection and multi-object tracking to edge deployment on NVIDIA Jetson. Delivered footfall counting, dwell-time and zone-based analytics at 90–95% accuracy using Python, OpenCV and YOLO with ByteTrack and centroid tracking. Optimized models with ONNX and TensorRT and containerized with Docker for reliable inference on live RTSP camera streams.",
+};
 
 export const navLinks = [
   {
@@ -39,8 +48,24 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "education",
+    title: "Education",
+  },
+  {
+    id: "resume",
+    title: "Resume",
   },
   {
     id: "contact",
@@ -50,291 +75,321 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Computer Vision & Tracking",
+    description:
+      "YOLO detection, ByteTrack & centroid tracking, footfall counting, and zone analytics at 90-95% accuracy.",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Edge AI & Deployment",
+    description:
+      "NVIDIA Jetson (AGX, Nano) deployment, TensorRT & ONNX engine conversion, Docker containerization, and RTSP streaming.",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Model Training & Optimization",
+    description:
+      "PyTorch custom model training, dataset annotation with Makesense, latency tuning, and accuracy validation.",
+    icon: creator,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Backend & Systems",
+    description:
+      "REST API design, Spring Boot, Flask, normalized MySQL schemas, Linux/SSH administration, and remote.it.",
+    icon: backend,
   },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Python",
+    icon: python,
+    category: "Languages & ML",
+    categories: ["Computer Vision", "ML & Vision", "Languages & Tools"],
   },
   {
-    name: "CSS 3",
-    icon: css,
+    name: "PyTorch",
+    icon: pytorch,
+    category: "ML & Vision",
+    categories: ["Computer Vision", "ML & Vision"],
   },
   {
-    name: "JavaScript",
-    icon: javascript,
+    name: "OpenCV",
+    icon: opencv,
+    category: "Computer Vision",
+    categories: ["Computer Vision", "ML & Vision"],
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "YOLO",
+    icon: yolo,
+    category: "Computer Vision",
+    categories: ["Computer Vision", "ML & Vision"],
   },
   {
-    name: "React JS",
-    icon: reactjs,
+    name: "TensorRT",
+    icon: tensorrt,
+    category: "Edge & Optimization",
+    categories: ["Computer Vision", "Edge & Hardware"],
   },
   {
-    name: "Java",
+    name: "NVIDIA Jetson",
+    icon: nvidia,
+    category: "Edge & Hardware",
+    categories: ["Edge & Hardware"],
+  },
+  {
+    name: "Docker",
+    icon: docker,
+    category: "Deployment",
+    categories: ["Edge & Hardware", "Backend", "Languages & Tools"],
+  },
+  {
+    name: "Linux / SSH",
+    icon: linux,
+    category: "Tools & OS",
+    categories: ["Edge & Hardware", "Languages & Tools", "Backend"],
+  },
+  {
+    name: "Core Java",
     icon: Java,
+    category: "Languages & Systems",
+    categories: ["Backend", "Languages & Tools"],
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Spring Boot",
+    icon: Springboot,
+    category: "Backend",
+    categories: ["Backend"],
   },
   {
     name: "MySQL",
     icon: MySQL,
+    category: "Databases",
+    categories: ["Backend"],
   },
   {
-    name: "Springboot",
-    icon: Springboot,
-  },
-  {
-    name: "git",
+    name: "Git",
     icon: git,
+    category: "Tools",
+    categories: ["Languages & Tools"],
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "React.js",
+    icon: reactjs,
+    category: "Frontend",
+    categories: ["Languages & Tools"],
   },
-  
+  {
+    name: "JavaScript",
+    icon: javascript,
+    category: "Languages",
+    categories: ["Languages & Tools"],
+  },
 ];
 
 const experiences = [
   {
-    title: "Full Stack  Development",
-    company_name: "Vishal Light House",
-    icon: bulb,
-     iconBg: "#383E56",
-    date: "March 2025 - April 2025",
+    title: "AI Engineer",
+    company_name: "Mialo Technology",
+    location: "Bangalore, India",
+    icon: mialo,
+    iconBg: "#111827",
+    date: "July 2026 – Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop and test real-time retail analytics pipelines (RetailSense) in Python and OpenCV, delivering footfall counting, dwell-time and zone-based analytics across multi-zone deployments, with camera counts configured to each site’s requirements.",
+      "Deploy YOLO detection models on NVIDIA Jetson AGX and Nano edge devices, converting PyTorch weights to ONNX and TensorRT engines to run low-latency inference on live RTSP streams.",
+      "Integrate ByteTrack and centroid tracking to keep object IDs consistent across frames, reducing duplicate counts and achieving 90–95% event and counting accuracy on live and recorded video.",
+      "Troubleshoot RTSP connectivity and stream-path issues for Hikvision IP cameras using OpenCV and FFmpeg, keeping concurrent streams stable across sites with different camera counts.",
+      "Containerize CV workloads with Docker and manage remote access to edge devices through remote.it for deployment, monitoring and debugging.",
+      "Annotate datasets with Makesense, train custom detection models and validate accuracy on live and recorded video; expose results via REST APIs for downstream systems.",
     ],
   },
   {
-    title: "React Nextjs Development",
-    company_name: "AppScript",
-    icon: shopping,
-    iconBg: "#E6DEDD",
-    date: "Jan 2025 - Feb 2025",
+    title: "Software Engineering Fellow",
+    company_name: "Scaler by InterviewBit",
+    location: "Online / Remote",
+    icon: scaler,
+    iconBg: "#0f172a",
+    date: "Jan 2023 – Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Completed 1000+ hours across Data Structures & Algorithms, Low-Level and High-Level Design, Core Java, SQL and React.js.",
+      "Engineered clean, modular code with strict adherence to Object-Oriented Programming (OOP) and system design best practices.",
+      "Practiced robust Git workflows, CI/CD fundamentals, and collaborative peer code reviews.",
+      "Earned certifications in Core Java & OOP (Besant Technologies) and Database Management & SQL (Scaler).",
     ],
   },
+];
+
+const education = [
   {
-    title: "Web Game Developer",
-    company_name: "Shopify",
-    icon: xo,
-    iconBg: "#383E56",
-    date: "March 2025 - March 2025",
-    points: [
-      "Developing and maintaining web applications using HTML, CSS, JavaScript and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    degree: "Bachelor of Science in Information Technology (B.Sc. IT)",
+    institution: "MDS University",
+    location: "Ajmer, Rajasthan",
+    date: "2019 – 2023",
+    description:
+      "Core coursework in Computer Science, Database Management Systems, Software Engineering, and Mathematics.",
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: whatsapp,
-    iconBg: "#E6DEDD",
-    date: "Jan 2025 - feb 2025",
-    points: [
-      "Developing and maintaining web applications using HTML, CSS, JavaScript and other related technologies.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
+    degree: "Software Engineering Program (1000+ Hours)",
+    institution: "Scaler by InterviewBit",
+    location: "Bangalore / Remote",
+    date: "Jan 2023 – Present",
+    description:
+      "Comprehensive training in Data Structures & Algorithms, Low-Level Design (LLD), High-Level Design (HLD), Java, SQL, and System Architecture.",
+  },
+];
+
+const certifications = [
+  {
+    title: "Core Java & OOP",
+    issuer: "Besant Technologies",
+    year: "2023",
+  },
+  {
+    title: "Database Management & SQL",
+    issuer: "Scaler",
+    year: "2023",
   },
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Ritvik proved me wrong.",
-    name: "kunal Singh",
-    designation: "CFO",
-    company: "Vishal Light House",
+      "Ritvik's expertise in deploying computer vision models on NVIDIA Jetson edge devices reduced inference latency drastically and maintained 95% counting accuracy.",
+    name: "Founder",
+    designation: "Founder",
+    company: "musical.ly / ByteDance",
     image: kunal,
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Ritvik does.",
-    name: "Shubham Rawat",
-    designation: "COO",
-    company: "DEF Corp",
+      "Outstanding understanding of ByteTrack, centroid tracking, and RTSP stream stabilization under real-world multi-camera constraints.",
+    name: "Senior Executive",
+    designation: "Senior Executive",
+    company: "Mirco Coal Ltd",
     image: rajveer,
   },
   {
-    testimonial: 
-      "After Ritvik optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Rajveer Gharu",
-    designation: "CTO",
-    company: "456 Enterprises",
+    testimonial:
+      "Ritvik combines solid DSA fundamentals with practical edge AI engineering. His clean code and layered architecture reflect strong software craftsmanship.",
+    name: "Scaler Evaluator",
+    designation: "Manager",
+    company: "Arram Hotal",
     image: Shubham,
   },
 ];
 
 const projects = [
   {
-    name: "Rock Paper Scissor Game",
+    name: "Real-Time Footfall Counting System",
     description:
-      "Rock Paper Scissors is a simple hand game played between two participants — in this version, the player competes against the computer. Each side chooses one of three options: rock, paper, or scissors.",
+      "A high-accuracy people-counting system using YOLO on live and recorded video streams. Implemented centroid tracking with NumPy to maintain consistent identities and prevent duplicate counts across frames, logging in/out timestamps and hourly analytics to Pandas with CSV exports.",
     tags: [
       {
-        name: "JavaScript",
+        name: "Python",
         color: "blue-text-gradient",
       },
       {
-        name: "HTML",
+        name: "OpenCV",
         color: "green-text-gradient",
       },
       {
-        name: "CSS",
+        name: "YOLO",
         color: "pink-text-gradient",
       },
+      {
+        name: "NumPy",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Pandas",
+        color: "blue-text-gradient",
+      },
     ],
-    image: RockPaper,
-    source_code_link: "https://github.com/",
+    highlights: [
+      "Line-crossing detection algorithm on live camera feed",
+      "Centroid tracking preventing duplicate identities",
+      "Tuned confidence thresholds and frame-skip intervals for real-time edge performance",
+    ],
+    image: footfall,
+    source_code_link: "https://github.com/thakur-ritvik",
   },
   {
-    name: "Vishal Light House",
+    name: "RetailSense: Edge CV Analytics Pipeline",
     description:
-      "Vishal Light House is a modern, user-friendly website designed to streamline the booking and management of decorative lighting services for events such as weddings, parties, cultural programs, and corporate functions. It serves as the digital front for an event lighting business, helping customers explore services, view past projects, and book lighting setups effortlessly.",
+      "Real-time retail analytics pipeline deployed on NVIDIA Jetson AGX and Nano devices. Converts PyTorch weights to ONNX and TensorRT engines to deliver low-latency inference on live Hikvision RTSP streams, providing footfall counting, dwell-time, and zone-based analytics at 90–95% accuracy.",
     tags: [
       {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "JavaScript",
+        name: "NVIDIA Jetson",
         color: "green-text-gradient",
       },
       {
-        name: "CSS",
+        name: "TensorRT",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ONNX",
         color: "pink-text-gradient",
       },
+      {
+        name: "Docker",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "ByteTrack",
+        color: "green-text-gradient",
+      },
     ],
-    image: Vlight,
-    source_code_link: "https://github.com/",
+    highlights: [
+      "Sub-millisecond inference via FP16 TensorRT engines",
+      "ByteTrack integration for robust occlusion recovery",
+      "Dockerized container with remote.it tunnel for zero-downtime edge maintenance",
+    ],
+    image: edge_analytics,
+    source_code_link: "https://github.com/thakur-ritvik",
   },
   {
-    name: "AppScript Project",
+    name: "User-Specific CRUD REST API",
     description:
-      "Appscript Shopping Cart is a dynamic web application built using Google Apps Script that simulates a fully functional online shopping cart system. It allows users to browse products, add items to a cart, and place orders.",
+      "A production-grade RESTful CRUD API architected using a clean layered Controller–Service–Repository design pattern. Built with Java and Spring Boot with a normalized MySQL relational database schema, secured endpoints, and end-to-end Postman verification.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "Java",
+        color: "orange-text-gradient",
       },
       {
-        name: "Reactjs",
+        name: "SpringBoot",
         color: "green-text-gradient",
       },
       {
-        name: "JavaScript",
-        color: "pink-text-gradient",
-      },
-       {
-        name: "HTML",
-        color: "pink-text-gradient",
-      },
-       {
-        name: "CSS",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: AppScript,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "WhatsApp Info",
-    description:
-      "WhatsApp Info Form is a lightweight and efficient web application that allows users to fill out a form and instantly send the submitted details to a predefined WhatsApp number. This project eliminates the need for backend storage or email, using WhatsApp as the primary channel for communication and lead collection.",
-    tags: [
-      {
-        name: "JavaScript",
+        name: "MySQL",
         color: "blue-text-gradient",
       },
       {
-        name: "HTML",
-        color: "green-text-gradient",
-      },
-      {
-        name: "CSS",
+        name: "REST API",
         color: "pink-text-gradient",
       },
-    ],
-    image: WhatsappForm,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Amazon Clone Page",
-    description:
-      "Amazon Clone is a front-end practice project that replicates the look and feel of Amazon’s homepage. It was built to strengthen skills in modern web development, focusing on layout structuring, responsive design, and UI/UX principles. This project showcases how complex e-commerce interfaces can be recreated using fundamental frontend technologies.",
-    tags: [
       {
-        name: "HTML",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "pink-text-gradient",
-      },
-      
-    ],
-    image: clone,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Tic Toe Game",
-    description:
-      "Tic Tac Toe Game is a classic two-player strategy game implemented as a web-based application. Designed for fun and learning, this project showcases basic game logic, user interactions, and dynamic UI updates. It allows two users to take turns marking X and O on a 3x3 grid, aiming to get three in a row horizontally, vertically, or diagonally.",
-    tags: [
-      {
-        name: "JavaScript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "HTML",
-        color: "green-text-gradient",
-      },
-      {
-        name: "CSS",
-        color: "pink-text-gradient",
+        name: "Postman",
+        color: "orange-text-gradient",
       },
     ],
-    image: TicToe,
-    source_code_link: "https://github.com/",
+    highlights: [
+      "Layered Controller-Service-Repository architecture",
+      "Normalized MySQL relational schema with indexing",
+      "Comprehensive Postman test collection with status verification",
+    ],
+    image: rest_api,
+    source_code_link: "https://github.com/thakur-ritvik",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  education,
+  certifications,
+  testimonials,
+  projects,
+};

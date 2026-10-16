@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="24" fill="#0b0f19"/>
+  <!-- Bounding box target reticle -->
+  <path d="M28 44V28h16M84 28h16v16M28 84v16h16M84 100h16V84" fill="none" stroke="#00E5FF" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="64" cy="64" r="8" fill="#FF0055"/>
+  <text x="64" y="70" font-family="sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" text-anchor="middle">YOLO</text>
+</svg>

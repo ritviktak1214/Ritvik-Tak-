@@ -9,15 +9,16 @@ import {
 } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
+import CanvasErrorBoundary from "./ErrorBoundary";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
-      <ambientLight intensity={0.25} />
+      <ambientLight intensity={0.5} />
       <directionalLight position={[0, 0, 0.05]} />
-      <mesh castShadow receiveShadow scale={2}>
+      <mesh castShadow receiveShadow scale={2.75}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color='#fff8eb'
@@ -37,20 +38,28 @@ const Ball = (props) => {
   );
 };
 
-const BallCanvas = ({ icon }) => {
+const BallCanvas = ({ icon, name }) => {
   return (
-    <Canvas
-      frameloop='demand'
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
+    <CanvasErrorBoundary
+      fallback={
+        <div className="w-20 h-20 rounded-full bg-tertiary flex items-center justify-center p-3 shadow-card border border-white/10 hover:scale-110 transition-transform">
+          <img src={icon} alt={name || "tech"} className="w-12 h-12 object-contain" loading="lazy" />
+        </div>
+      }
     >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
-        <Ball imgUrl={icon} />
-      </Suspense>
+      <Canvas
+        frameloop='demand'
+        dpr={[1, 1.5]}
+        gl={{ preserveDrawingBuffer: false, powerPreference: "low-power" }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls enableZoom={false} />
+          <Ball imgUrl={icon} />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
+    </CanvasErrorBoundary>
   );
 };
 
